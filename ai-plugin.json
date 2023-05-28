@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Currency Converter",
+  "name_for_model": "currencyconverter",
+  "description_for_human": "Plugin for converting currencies using the latest exchange rates.",
+  "description_for_model": "Plugin for converting currencies using the latest exchange rates. Use keywords 'convert', 'from', 'to', and 'amount' to prompt the plugin.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://currency-conversion-plugin.liamottley.repl.co/.well-known/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://your-domain.com/logo.png",
+  "contact_email": "support@your-domain.com",
+  "legal_info_url": "https://www.your-domain.com/legal"
+}
