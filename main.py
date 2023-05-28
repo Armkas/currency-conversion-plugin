@@ -5,13 +5,10 @@ import requests
 
 app = Flask(__name__)
 
-my_secret = os.environ['SvSyUDeLCSUqWYZZyYC67NIGjgLTgzyp']
-
-
 def get_exchange_rate(from_currency, to_currency, amount, date=None):
   url = f"https://api.apilayer.com/exchangerates_data/convert?from={from_currency}&to={to_currency}&amount={amount}"
 
-  headers = {"apikey": my_secret}
+  headers = {"apikey": "SvSyUDeLCSUqWYZZyYC67NIGjgLTgzyp"}
 
   response = requests.get(url, headers=headers)
 
@@ -41,14 +38,14 @@ def convert_currency():
   except Exception as e:
     return jsonify({"error": str(e)}), 400
 
-
+# https://currency-conversion-plugin.armkas.repl.co/.well-known/ai-plugin.json
 @app.route('/.well-known/ai-plugin.json')
 def serve_ai_plugin():
   return send_from_directory('.',
                              'ai-plugin.json',
                              mimetype='application/json')
 
-
+# https://currency-conversion-plugin.armkas.repl.co/.well-known/openapi.yaml
 @app.route('/.well-known/openapi.yaml')
 def serve_openapi_yaml():
   return send_from_directory('.', 'openapi.yaml', mimetype='text/yaml')

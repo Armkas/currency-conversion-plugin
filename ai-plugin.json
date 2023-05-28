@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://currency-conversion-plugin.liamottley.repl.co/.well-known/openapi.yaml",
+    "url": "https://currency-conversion-plugin.armkas.repl.co/.well-known/openapi.yaml",
     "is_user_authenticated": false
   },
   "logo_url": "https://your-domain.com/logo.png",

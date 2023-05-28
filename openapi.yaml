@@ -4,7 +4,7 @@ info:
   description: A plugin that allows the user to convert currencies using the latest exchange rates with ChatGPT.
   version: 'v1'
 servers:
-  - url: https://currency-conversion-plugin.liamottley.repl.co
+  - url: https://currency-conversion-plugin.armkas.repl.co #修改成自己的API地址
 paths:
   /convert:
     get:
